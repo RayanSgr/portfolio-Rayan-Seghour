@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Seghour Rayan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     Navigation 
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">SR</div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Accueil</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#stages" class="nav-link">Stages</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+     Hero Section 
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                Étudiant BTS SIO - Spécialiste Réseaux & Développeur Web
+            </div>
+            <h1 class="hero-title">
+                Seghour <span class="gradient-text">Rayan</span>
+            </h1>
+            <p class="hero-subtitle">
+                Passionné par le développement web, les infrastructures réseau et les technologies émergentes
+            </p>
+            <button class="hero-btn" onclick="scrollToSection('about')">
+                Découvrir mon parcours
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+     About Section 
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">À propos</h2>
+                    <div class="about-content">
+                        <p>
+                            Actuellement en première année de BTS SIO option SISR, je me passionne pour l'univers du développement web et des réseaux informatiques.
+                        </p>
+                        <p>
+                            Ma curiosité naturelle m'amène à explorer les dernières innovations, notamment dans l'IoT, le e-commerce et l'intelligence artificielle.
+                        </p>
+                    </div>
+                    <div class="tech-badges">
+                        <span class="badge">Développement Web</span>
+                        <span class="badge">E-commerce</span>
+                        <span class="badge">Réseaux</span>
+                        <span class="badge">IoT</span>
+                        <span class="badge">Sécurité</span>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3 class="skills-title">
+                        <i class="fas fa-bolt"></i>
+                        Compétences techniques
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PHP & MySQL</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML/CSS/JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Administration Linux</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Routage & Switching</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Sécurité réseau</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Virtualisation</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Projects Section 
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projets</h2>
+                <p class="section-subtitle">Découvrez mes réalisations techniques et ma veille technologique</p>
+            </div>
+
+            <div class="projects-grid">
+                 Projet KOO2fourchette 
+                <div class="project-card">
+                    <div class="project-icon orange">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="project-title">KOO2fourchette</h3>
+                    <p class="project-description">Site web de recettes culinaires avec système de recherche</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+
+                 Veille Technologique - LIEN VERS PAGE DÉDIÉE 
+                <a href="veille-technologique.html" class="project-card" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="project-icon blue">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="project-title">Veille Technologique IoT</h3>
+                    <p class="project-description">Analyse complète des innovations IoT mars-septembre 2025</p>
+                    <div class="project-tags">
+                        <span class="tag">7 actualités</span>
+                        <span class="tag">Méthodologie</span>
+                        <span class="tag">Analyse</span>
+                    </div>
+                </a>
+
+                 Infrastructure Réseau 
+                <div class="project-card">
+                    <div class="project-icon green">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="project-title">Infrastructure Réseau</h3>
+                    <p class="project-description">Configuration réseau avec VLANs et sécurité</p>
+                    <div class="project-tags">
+                        <span class="tag">Cisco</span>
+                        <span class="tag">pfSense</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Stages Section 
+    <section id="stages" class="stages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Expérience de Stage</h2>
+            </div>
+
+            <div class="stage-card">
+                <div class="stage-sidebar">
+                    <i class="fas fa-code"></i>
+                    <div class="stage-year">2025</div>
+                    <div class="stage-period">Mai - Juillet</div>
+                    <div class="stage-status">Terminé</div>
+                </div>
+                <div class="stage-content">
+                    <h3 class="stage-title">Stagiaire Web</h3>
+                    <h4 class="stage-company">Giftasso (développée par Metacard)</h4>
+                    <p class="stage-description">
+                        Stage de 3 mois axé sur le développement web et la création d'un site e-commerce.
+                    </p>
+
+                    <div class="stage-missions">
+                        <h5>Missions réalisées :</h5>
+                        <ul>
+                            <li>Développement du site marchand Giftasso</li>
+                            <li>Mise en place du processus de vente final</li>
+                            <li>Intégration de solutions de paiement</li>
+                            <li>Optimisation de l'interface utilisateur</li>
+                            <li>Tests et déploiement</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage-skills">
+                        <span class="skill-badge">PHP</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">HTML/CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">E-commerce</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Contact Section 
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour toute opportunité</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card" onclick="window.open('mailto:rayanseghour@gmail.com')">
+                    <div class="contact-icon blue">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>rayanseghour@gmail.com</p>
+                </div>
+
+                <div class="contact-card" onclick="window.open('tel:+33767090441')">
+                    <div class="contact-icon purple">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p>+33 7 67 09 04 41</p>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <button class="contact-btn" onclick="window.open('mailto:rayanseghour@gmail.com')">
+                    <i class="fas fa-envelope"></i>
+                    Envoyer un message
+                </button>
+            </div>
+        </div>
+    </section>
+
+     Footer 
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Seghour Rayan. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

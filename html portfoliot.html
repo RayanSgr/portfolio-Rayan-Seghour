@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">SR</div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Accueil</a></li>
+            <li><a href="#about" class="nav-link">A propos</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="veille-technologique.html" class="nav-link">Veille IoT</a></li>
+            <li><a href="#stages" class="nav-link">Formation</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Header -->
+    <header class="header" id="home">
+        <h1 class="header-title">Bienvenue dans mon portfolio</h1>
+        <p class="header-subtitle">Seghour Rayan</p>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Présentation -->
+    <section class="about" id="about">
+        <h2>À propos de moi</h2>
+        <div class="about-content">
+            <p>Je suis étudiant en BTS SIO spécialisé en réseaux informatiques. Passionné par les infrastructures réseau, la sécurité et l'administration système, je développe mes compétences à travers divers projets et formations.</p>
+            <p>Mon objectif est de concevoir, déployer et maintenir des infrastructures réseau performantes et sécurisées.</p>
+        </div>
+        
+        <div class="skills">
+            <h3>Mes competences</h3>
+            <div class="skill-item">
+                <span class="skill-name">Administration Linux</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">Routage & Switching</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">Securite reseau</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="65"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">Configuration de serveurs</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">Virtualisation (Proxmox/VirtualBox)</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section class="projects" id="projects">
+        <h2>Projets</h2>
+        <div class="project-grid">
+            <!-- Projet 1 : Image -->
+            <div class="project-item" data-modal="image">
+                <div class="project-image-container">
+                    <img src="Image_koo.png" alt="Projet 1" class="project-image">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>KOO2fourchette</h3>
+                            <p>Site de recettes culinaires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Veille Technologique -->
+            <a href="veille-technologique.html" class="project-item project-link">
+                <div class="project-content">
+                    <div class="project-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Veille Technologique IoT</h3>
+                    <p class="project-description">Suivi des dernières innovations IoT (Mars - Septembre 2025)</p>
+                </div>
+            </a>
+            
+            <!-- Projet Infrastructure Réseau -->
+            <div class="project-item" data-modal="infrastructure">
+                <div class="project-content">
+                    <div class="project-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Infrastructure Réseau</h3>
+                    <p class="project-description">Configuration et sécurisation d'un réseau d'entreprise</p>
+                </div>
+            </div>
+
+            <!-- Projet 4 : Infrastructure Réseau 2ème année BTS SIO -->
+            <div class="project-item" data-modal="infrastructureBTS">
+                <div class="project-content">
+                    <div class="project-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Infra. Réseau 2ème Année</h3>
+                    <p class="project-description">Architecture réseau multi-zones avec sécurité</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formation / Stages -->
+    <section class="stages" id="stages">
+        <h2>Formation & Stage</h2>
+        <div class="stages-container">
+            <div class="stage-timeline">
+                <!-- Stage Giftasso -->
+                <div class="stage-item">
+                    <div class="stage-date">
+                        <span class="stage-year">2025</span>
+                        <span class="stage-period">26 Mai - 4 Juillet</span>
+                    </div>
+                    <div class="stage-content">
+                        <div class="stage-status completed">Terminé</div>
+                        <h3>Stagiaire Web</h3>
+                        <h4>Giftasso (développée par Metacard)</h4>
+                        <p>Développement d'un site marchand e-commerce. Participation au processus de vente final et à la mise en place de la plateforme. (Détails confidentiels)</p>
+                        <div class="stage-skills">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">E-commerce</span>
+                        </div>
+                        <div class="stage-actions">
+                            <button class="stage-btn" data-stage="stage1">
+                                <i class="fas fa-file-pdf"></i> Rapport de stage
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BTS SIO 1ère année -->
+                <div class="stage-item bts-item">
+                    <div class="stage-date">
+                        <span class="stage-year">2024-2025</span>
+                        <span class="stage-period">1ère année</span>
+                    </div>
+                    <div class="stage-content">
+                        <div class="stage-status in-progress">En cours</div>
+                        <h3>BTS SIO option SISR</h3>
+                        <h4>Services Informatiques aux Organisations</h4>
+                        <p>Formation en administration réseau, virtualisation, sécurité et services informatiques. Projets pratiques sur infrastructure réseau complète.</p>
+                        <div class="stage-skills">
+                            <span class="skill-tag">Cisco</span>
+                            <span class="skill-tag">pfSense</span>
+                            <span class="skill-tag">Proxmox</span>
+                            <span class="skill-tag">VirtualBox</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">VLAN</span>
+                            <span class="skill-tag">DHCP</span>
+                            <span class="skill-tag">DNS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Pour toute question ou opportunité de stage, contactez-moi.</p>
+        
+        <div class="contact-methods">
+            <a href="mailto:rayanseghour@gmail.com" class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <p>rayanseghour@gmail.com</p>
+                </div>
+            </a>
+            <a href="tel:+33767090441" class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Téléphone</h3>
+                    <p>07 67 09 04 41</p>
+                </div>
+            </a>
+        </div>
+        
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rayanseghour@gmail.com&su=Contact%20depuis%20le%20portfolio&body=Bonjour%20Rayan," target="_blank" class="contact-button">
+            <span>Envoyer un message</span>
+            <i class="fas fa-paper-plane"></i>
+        </a>
+    </section>
+
+    <!-- Modales pour les projets -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <img src="Image_koo.png" alt="KOO2fourchette" class="modal-image">
+                <div class="modal-text">
+                    <h2>KOO2fourchette</h2>
+                    <p>Site web de recettes culinaires permettant aux utilisateurs de découvrir, partager et sauvegarder leurs recettes préférées.</p>
+                    <div class="project-tech">
+                        <h4>Technologies utilisées :</h4>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Veille Technologique IoT -->
+    <div class="modal" id="veilleModal">
+        <div class="modal-content large-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-text full-width">
+                    <h2><i class="fas fa-satellite-dish"></i> Veille Technologique IoT 2025</h2>
+                    <p class="veille-intro">Suivi des dernières innovations et tendances dans l'Internet des Objets depuis mai 2025.</p>
+                    
+                    <div class="veille-stats-mini">
+                        <div class="stat-mini">
+                            <strong>42,1 milliards</strong>
+                            <span>d'objets connectés fin 2025</span>
+                        </div>
+                        <div class="stat-mini">
+                            <strong>1,6 trillion $</strong>
+                            <span>marché IoT mondial</span>
+                        </div>
+                    </div>
+
+                    <h3><i class="fas fa-newspaper"></i> Actualités récentes (Mai - Décembre 2025)</h3>
+                    
+                    <div class="veille-timeline">
+                        <div class="veille-item">
+                            <div class="veille-date">15 NOV</div>
+                            <div class="veille-content">
+                                <h4>Lancement du protocole IoT-Mesh 3.0</h4>
+                                <p>Le nouveau standard permet une communication inter-objets sans infrastructure centralisée, avec une portée étendue à 2km en zone urbaine.</p>
+                                <span class="veille-source">Source: IEEE Communications Society</span>
+                            </div>
+                        </div>
+
+                        <div class="veille-item">
+                            <div class="veille-date">28 OCT</div>
+                            <div class="veille-content">
+                                <h4>Première puce IoT alimentée par ondes radio</h4>
+                                <p>Des chercheurs du MIT ont développé une puce capable de fonctionner uniquement grâce à l'énergie des ondes radio ambiantes, éliminant le besoin de batteries.</p>
+                                <span class="veille-source">Source: MIT Technology Review</span>
+                            </div>
+                        </div>
+
+                        <div class="veille-item">
+                            <div class="veille-date">12 SEP</div>
+                            <div class="veille-content">
+                                <h4>IoT et IA : Fusion révolutionnaire</h4>
+                                <p>Google annonce l'intégration native de modèles IA dans ses puces IoT, permettant un traitement intelligent en temps réel sans connexion cloud.</p>
+                                <span class="veille-source">Source: Google AI Blog</span>
+                            </div>
+                        </div>
+
+                        <div class="veille-item">
+                            <div class="veille-date">03 AOU</div>
+                            <div class="veille-content">
+                                <h4>Sécurité IoT : Nouveau standard européen</h4>
+                                <p>L'UE impose le chiffrement quantique pour tous les nouveaux appareils IoT critiques, renforçant la cybersécurité des infrastructures.</p>
+                                <span class="veille-source">Source: Commission Européenne</span>
+                            </div>
+                        </div>
+
+                        <div class="veille-item">
+                            <div class="veille-date">18 JUL</div>
+                            <div class="veille-content">
+                                <h4>IoT Spatial : Première constellation de satellites</h4>
+                                <p>SpaceX déploie 200 micro-satellites dédiés à l'IoT, offrant une couverture mondiale pour les objets connectés en zones isolées.</p>
+                                <span class="veille-source">Source: SpaceX Official</span>
+                            </div>
+                        </div>
+
+                        <div class="veille-item">
+                            <div class="veille-date">25 JUN</div>
+                            <div class="veille-content">
+                                <h4>Breakthrough : IoT et informatique quantique</h4>
+                                <p>IBM présente le premier processeur quantique miniaturisé pour IoT, capable de résoudre des problèmes d'optimisation complexes localement.</p>
+                                <span class="veille-source">Source: IBM Research</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3><i class="fas fa-chart-line"></i> Tendances émergentes</h3>
+                    <div class="trends-grid-mini">
+                        <div class="trend-mini">
+                            <i class="fas fa-brain"></i>
+                            <h4>IoT Neuromorphique</h4>
+                            <p>Puces imitant le cerveau humain pour un apprentissage autonome</p>
+                        </div>
+                        <div class="trend-mini">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Green IoT</h4>
+                            <p>Capteurs auto-alimentés par énergie solaire et vibrations</p>
+                        </div>
+                        <div class="trend-mini">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Zero-Trust IoT</h4>
+                            <p>Architecture de sécurité sans confiance par défaut</p>
+                        </div>
+                        <div class="trend-mini">
+                            <i class="fas fa-satellite"></i>
+                            <h4>IoT Spatial</h4>
+                            <p>Réseaux de satellites dédiés aux objets connectés</p>
+                        </div>
+                    </div>
+
+                    <h3><i class="fas fa-tools"></i> Outils de veille utilisés</h3>
+                    <div class="tools-list">
+                        <span class="tool-tag"><i class="fas fa-rss"></i> Feedly</span>
+                        <span class="tool-tag"><i class="fab fa-twitter"></i> Twitter/X</span>
+                        <span class="tool-tag"><i class="fas fa-bell"></i> Google Alerts</span>
+                        <span class="tool-tag"><i class="fab fa-linkedin"></i> LinkedIn</span>
+                        <span class="tool-tag"><i class="fas fa-podcast"></i> Podcasts tech</span>
+                    </div>
+
+                    <div class="veille-footer">
+                        <p><strong>Dernière mise à jour :</strong> 15 décembre 2025</p>
+                        <p><strong>Prochaine mise à jour :</strong> 15 janvier 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Infrastructure -->
+    <div class="modal" id="infrastructureModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-text full-width">
+                    <h2><i class="fas fa-network-wired"></i> Projet Infrastructure Réseau</h2>
+                    <p>Conception et déploiement d'une infrastructure réseau sécurisée pour une PME de 50 employés.</p>
+                    
+                    <h3>Objectifs du projet</h3>
+                    <ul>
+                        <li>Segmentation réseau avec VLANs</li>
+                        <li>Mise en place d'un firewall pfSense</li>
+                        <li>Configuration de serveurs Linux (DNS, DHCP, Web)</li>
+                        <li>Monitoring avec Nagios</li>
+                        <li>Sauvegarde automatisée</li>
+                    </ul>
+
+                    <h3>Technologies utilisées</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Cisco</span>
+                        <span class="tech-tag">pfSense</span>
+                        <span class="tech-tag">Linux Ubuntu Server</span>
+                        <span class="tech-tag">Nagios</span>
+                        <span class="tech-tag">VMware</span>
+                    </div>
+
+                    <h3>Résultats</h3>
+                    <p>Infrastructure opérationnelle avec une disponibilité de 99.8%, temps de réponse amélioré de 40% et sécurité renforcée.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Infrastructure BTS -->
+    <div class="modal" id="infrastructureBTSModal">
+        <div class="modal-content large-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <img src="/images/image.png" alt="Architecture Infrastructure Réseau" class="modal-image">
+                <div class="modal-text">
+                    <h2><i class="fas fa-sitemap"></i> Infrastructure Réseau - 2ème Année BTS SIO</h2>
+                    <p>Architecture réseau complète d'une infrastructure multi-zones avec sécurisation en profondeur.</p>
+                    
+                    <h3>Description de l'architecture</h3>
+                    <p>Cette infrastructure segmente le réseau en 4 zones colorées :</p>
+                    
+                    <div class="zones-description">
+                        <div class="zone-item cyan-zone">
+                            <h4>Zone Cyan - Réseau Filaire</h4>
+                            <p>Contient les postes clients (PC, Laptop) avec accès filaire via VLAN et commutateurs réseau.</p>
+                            <div class="zone-components">
+                                <span>PCO, IP Phone1, FC3</span>
+                                <span>PC4, PC5, Laptops</span>
+                                <span>Commutateurs Cisco</span>
+                            </div>
+                        </div>
+                        
+                        <div class="zone-item orange-zone">
+                            <h4>Zone Orange - Serveurs d'Application</h4>
+                            <p>Héberge les serveurs critiques (Asterisk, DHCP, AD) avec haute disponibilité.</p>
+                            <div class="zone-components">
+                                <span>Serveur Asterisk (PABX)</span>
+                                <span>Serveur DHCP</span>
+                                <span>Supervision des services</span>
+                            </div>
+                        </div>
+                        
+                        <div class="zone-item yellow-zone">
+                            <h4>Zone Jaune - Stockage & Bases de Données</h4>
+                            <p>Dédiée au stockage, aux sauvegardes et aux serveurs web.</p>
+                            <div class="zone-components">
+                                <span>Serveurs Web WordPress</span>
+                                <span>SG1D0 & SG2D0 (Stockage)</span>
+                                <span>Backup & Récupération</span>
+                            </div>
+                        </div>
+                        
+                        <div class="zone-item green-zone">
+                            <h4>Zone Verte - DMZ (Démilitarisée)</h4>
+                            <p>Zone isolée pour les services publics accédant à Internet.</p>
+                            <div class="zone-components">
+                                <span>Serveur FTP</span>
+                                <span>Accès Internet direct</span>
+                                <span>IP: 192.168.0.0/29</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Éléments clés de l'infrastructure</h3>
+                    <ul>
+                        <li><strong>Routeur Central (RTUGUESt):</strong> 10.10.20.0/29 - Gère l'interconnexion entre zones</li>
+                        <li><strong>Hyperviseur:</strong> Virtualisation des serveurs critiques</li>
+                        <li><strong>Réseau WAN:</strong> Connexion Internet via IP 172.16.1.0/24</li>
+                        <li><strong>Wireless Ligue:</strong> Accès sans fil sécurisé 802.1X</li>
+                        <li><strong>Présence DMZ Privée:</strong> 10.10.20.0/29 - Sécurité en profondeur</li>
+                    </ul>
+
+                    <h3>Plages d'adresses IP</h3>
+                    <div class="ip-ranges">
+                        <div class="range-item">
+                            <span class="range-label">Zone Cyan (Filaire):</span>
+                            <span class="range-value">172.16.X.X/24</span>
+                        </div>
+                        <div class="range-item">
+                            <span class="range-label">Zone Orange (Serveurs):</span>
+                            <span class="range-value">172.16.2.224/27</span>
+                        </div>
+                        <div class="range-item">
+                            <span class="range-label">Zone Jaune (Stockage):</span>
+                            <span class="range-value">192.168.1.0/28</span>
+                        </div>
+                        <div class="range-item">
+                            <span class="range-label">Zone Verte (DMZ):</span>
+                            <span class="range-value">192.168.0.0/29</span>
+                        </div>
+                        <div class="range-item">
+                            <span class="range-label">Internet (WAN):</span>
+                            <span class="range-value">172.16.1.0/24</span>
+                        </div>
+                    </div>
+
+                    <h3>Sécurité & Résilience</h3>
+                    <div class="security-features">
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Segmentation réseau</h4>
+                            <p>VLANs et pare-feu entre zones</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-lock"></i>
+                            <h4>Chiffrement</h4>
+                            <p>Protocoles sécurisés (SSH, HTTPS)</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-redo"></i>
+                            <h4>Redondance</h4>
+                            <p>Hyperviseur pour haute disponibilité</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <h4>Supervision</h4>
+                            <p>Monitoring continu des services</p>
+                        </div>
+                    </div>
+
+                    <h3>Technologies utilisées</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Cisco IOS</span>
+                        <span class="tech-tag">VLAN (802.1Q)</span>
+                        <span class="tech-tag">Linux Ubuntu</span>
+                        <span class="tech-tag">Asterisk PABX</span>
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">FTP/SFTP</span>
+                        <span class="tech-tag">DHCP/DNS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
